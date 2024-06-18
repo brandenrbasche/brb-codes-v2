@@ -19,7 +19,7 @@ export const BentoGrid = ({
     return (
         <div
             className={cn(
-                "w-full grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
+                "w-full grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-3 mx-auto",
                 className
             )}
         >
@@ -61,7 +61,7 @@ export const BentoGridItem = ({
     return (
         <div
             className={cn(
-                "row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border border-white/[0.1]",
+                "row-span-1 relative overflow-hidden rounded-2xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border border-white/[0.1]",
                 className
             )}
             style={{
@@ -96,12 +96,12 @@ export const BentoGridItem = ({
                 )}
 
                 <div className={cn(
-                    titleClassName, 'group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col padding-x-5 p-5 lg:p-10'
+                    titleClassName, 'group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col padding-x-2 p-3'
                 )}>
-                    <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
+                    <div className="font-mono font-bold text-lg lg:text-2xl max-w-96 z-10">
                         {title}
                     </div>
-                    <div className='font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10'>
+                    <div className='text-gray-400 font-sans text-sm md:text-xs lg:text-base z-10'>
                         {description}
                     </div>
 
@@ -116,30 +116,30 @@ export const BentoGridItem = ({
                     {/*    <GlobeDemo />*/}
                     {/*)}*/}
 
-                    {id === 3 && (
-                        <div className='flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2'>
-                            <div className='flex flex-col gap-3 lg:gap-8'>
-                                {/*front end tools*/}
-                                {leftList.map((item) => (
-                                    <span key={item}
-                                          className='py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]'>
-                                    {item}
-                                </span>
-                                ))}
-                                <span className='py-4 px-3 rounded-lg text-center bg-[#10132e]'/>
-                            </div>
-                            <div className='flex flex-col gap-3 lg:gap-8'>
-                                <span className='py-4 px-3 rounded-lg text-center bg-[#10132e]'/>
-                                {/*back end tools*/}
-                                {rightList.map((item) => (
-                                    <span key={item}
-                                          className='py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]'>
-                                    {item}
-                                </span>
-                                ))}
-                            </div>
-                        </div>
-                    )}
+                    {/*{id === 3 && (*/}
+                    {/*    <div className='flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2'>*/}
+                    {/*        <div className='flex flex-col gap-3 lg:gap-8'>*/}
+                    {/*            /!*front end tools*!/*/}
+                    {/*            {leftList.map((item) => (*/}
+                    {/*                <span key={item}*/}
+                    {/*                      className='py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]'>*/}
+                    {/*                {item}*/}
+                    {/*            </span>*/}
+                    {/*            ))}*/}
+                    {/*            <span className='py-4 px-3 rounded-lg text-center bg-[#10132e]'/>*/}
+                    {/*        </div>*/}
+                    {/*        <div className='flex flex-col gap-3 lg:gap-8'>*/}
+                    {/*            <span className='py-4 px-3 rounded-lg text-center bg-[#10132e]'/>*/}
+                    {/*            /!*back end tools*!/*/}
+                    {/*            {rightList.map((item) => (*/}
+                    {/*                <span key={item}*/}
+                    {/*                      className='py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]'>*/}
+                    {/*                {item}*/}
+                    {/*            </span>*/}
+                    {/*            ))}*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*)}*/}
 
                     {id === 6 && (
                         <div className='mt-5 relative'>
