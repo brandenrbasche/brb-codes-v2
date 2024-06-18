@@ -48,8 +48,7 @@ export const BentoGridItem = ({
         spareImg?: string;
 }) => {
 
-    const leftList = ['React.js', 'TypeScript', 'Next.js'];
-    const rightList = ['AWS', 'MongoDB', 'Express.js'];
+    const toolsList = ['React.js', 'TypeScript', 'Next.js', 'AWS', 'MongoDB', 'Express.js'];
 
     const [copied, setCopied] = useState(false);
 
@@ -61,11 +60,12 @@ export const BentoGridItem = ({
     return (
         <div
             className={cn(
-                "row-span-1 relative overflow-hidden rounded-2xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border border-white/[0.1]",
+                "row-span-1 relative overflow-hidden rounded-2xl group/bento shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
                 className
             )}
             style={{
-                background: "rgb(4,7,29)",
+                // background: "rgb(4,7,29)",
+                background: "rgb(37, 38, 45)",
                 backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
             }}
         >
@@ -96,25 +96,38 @@ export const BentoGridItem = ({
                 )}
 
                 <div className={cn(
-                    titleClassName, 'group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col padding-x-2 p-3'
+                    titleClassName, 'relative md:h-full min-h-40 flex flex-col padding-x-2 p-3'
                 )}>
-                    <div className="font-mono font-bold text-lg lg:text-2xl max-w-96 z-10">
+                    <div className="font-mono text-gray-200 font-bold text-lg lg:text-2xl max-w-96 z-10">
                         {title}
                     </div>
-                    <div className='text-gray-400 font-sans text-sm md:text-xs lg:text-base z-10'>
+                    <div className='text-gray-400 font-sans text-lg md:text-xs lg:text-xl z-10'>
                         {description}
                     </div>
 
-                    {/*<div className='font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10'>*/}
-                    {/*    {description}*/}
-                    {/*</div>*/}
-                    {/*<div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">*/}
-                    {/*    {title}*/}
-                    {/*</div>*/}
-
-                    {/*{id === 2 && (*/}
-                    {/*    <GlobeDemo />*/}
-                    {/*)}*/}
+                    {/*TECH STACK CAROUSEL*/}
+                    {id === 2 && (
+                        <div className='w-full h-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]'>
+                            <ul className='flex items-center justify-center md:justify-start[&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll'>
+                                {
+                                    toolsList.map((item, index) => (
+                                        <li className='px-4' key={index}>
+                                            <p className='font-mono text-3xl text-gray-500'>{item}</p>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                            <ul className='flex items-center justify-center md:justify-start[&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll'>
+                                {
+                                    toolsList.map((item, index) => (
+                                        <li className='px-4' key={index}>
+                                            <p className='font-mono text-3xl text-grey-500'>{item}</p>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
+                    )}
 
                     {/*{id === 3 && (*/}
                     {/*    <div className='flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2'>*/}
