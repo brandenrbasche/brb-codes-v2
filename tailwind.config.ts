@@ -19,7 +19,7 @@ const config = {
   prefix: "",
   theme: {
     fontFamily: {
-      sans: ["Archivo", "sans-serif", "system-ui"]
+      sans: ["archivo", "sans-serif", "system-ui"],
     },
     container: {
       center: true,

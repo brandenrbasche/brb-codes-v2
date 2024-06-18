@@ -97,10 +97,10 @@ export const BentoGridItem = ({
                 <div className={cn(
                     titleClassName, 'relative md:h-full min-h-40 flex flex-col padding-x-2 p-3'
                 )}>
-                    <div className="font-mono text-gray-200 font-bold text-2xl max-w-96 z-10">
+                    <div className="text-gray-200 font-bold text-2xl max-w-96 z-10">
                         {title}
                     </div>
-                    <div className='text-gray-400 font-sans text-lg lg:text-xl z-10'>
+                    <div className='text-gray-400 text-lg lg:text-xl z-10'>
                         {description}
                     </div>
 
@@ -112,7 +112,7 @@ export const BentoGridItem = ({
                                 {
                                     toolsList.map((item, index) => (
                                         <li className='px-4' key={index}>
-                                            <p className='font-mono text-3xl text-gray-500'>{item}</p>
+                                            <p className='text-3xl text-gray-500'>{item}</p>
                                         </li>
                                     ))
                                 }
@@ -121,7 +121,7 @@ export const BentoGridItem = ({
                                 {
                                     toolsList.map((item, index) => (
                                         <li className='px-4' key={index}>
-                                            <p className='font-mono text-3xl text-grey-500'>{item}</p>
+                                            <p className='text-3xl text-grey-500'>{item}</p>
                                         </li>
                                     ))
                                 }
