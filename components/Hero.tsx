@@ -4,13 +4,17 @@ import {BackgroundGradientAnimation} from "@/components/ui/GradientBg";
 
 const Hero = () => {
     return (
-        <div className='h-[80vh] pb-20 items-center'>
-            <BackgroundGradientAnimation>
+        <div className='pb-20 items-center'>
+            {/*<BackgroundGradientAnimation>*/}
 
                 <div className='flex flex-col justify-center relative m-w-20 z-10 px-5 pointer-events-none'>
-                    <HeroHeader />
+                    <div className='flex justify-between items-center'>
+                        <h1 className='text-xl text-white-200 font-mono mt-5'>Branden Basche</h1>
+                        <p className='font-mono text-white-200'>brb.codes</p>
+                    </div>
+                    <HeroHeader/>
                 </div>
-            </BackgroundGradientAnimation>
+            {/*</BackgroundGradientAnimation>*/}
 
         </div>
     );

@@ -8,7 +8,7 @@ export const navItems = [
 export const gridItems = [
     {
         id: 1,
-        title: "About me",
+        title: "☻ Hello",
         description: "Frameworks like React, Angular, and Svelte are part of my toolkit, but I work across the stack. My experience spans from front-end development, back-end development, software testing, UX/UI design, and SEO.",
         // className: "lg:col-span-3 md:col-span-6 md:row-span-1 lg:min-h-[60vh]",
         className: "lg:col-span-2 md:col-span-3 md:row-span-2",

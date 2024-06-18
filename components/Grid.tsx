@@ -1,31 +1,27 @@
 import React from 'react';
-// import { gridItems } from '@/data';
-// import {BentoGrid, BentoGridItem} from "@/components/ui/BentoGrid";
-import {LayoutGrid} from "@/components/ui/LayoutGrid";
+import { gridItems } from '@/data';
+import {BentoGrid, BentoGridItem} from "@/components/ui/BentoGrid";
+// import {LayoutGrid} from "@/components/ui/LayoutGrid";
 
 const Grid = () => {
     return (
-        <section id='experience' className='h-screen py-20 w-full'>
-            <LayoutGrid cards={cards} />
+        <section id='about'>
+            <BentoGrid>
+                {gridItems.map(({ id, title, description, className, img, imgClassName, titleClassName, spareImg}, i) => (
+                    <BentoGridItem
+                        id={id}
+                        key={id}
+                        title={title}
+                        description={description}
+                        className={className}
+                        img={img}
+                        imgClassName={imgClassName}
+                        titleClassName={titleClassName}
+                        spareImg={spareImg}
+                    />
+                ))}
+            </BentoGrid>
         </section>
-
-        // <section id='about'>
-        //     <BentoGrid>
-        //         {gridItems.map(({ id, title, description, className, img, imgClassName, titleClassName, spareImg}, i) => (
-        //             <BentoGridItem
-        //                 id={id}
-        //                 key={id}
-        //                 title={title}
-        //                 description={description}
-        //                 className={className}
-        //                 img={img}
-        //                 imgClassName={imgClassName}
-        //                 titleClassName={titleClassName}
-        //                 spareImg={spareImg}
-        //             />
-        //         ))}
-        //     </BentoGrid>
-        // </section>
     );
 };
 
