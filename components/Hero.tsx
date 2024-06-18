@@ -7,8 +7,8 @@ const Hero = () => {
         <div className='h-[80vh] pb-20 items-center'>
             <BackgroundGradientAnimation>
 
-                <div className='flex justify-center items-center relative m-w-20 z-10'>
-                    <HeroHeader/>
+                <div className='flex flex-col justify-center relative m-w-20 z-10 px-5 pointer-events-none'>
+                    <HeroHeader />
                 </div>
             </BackgroundGradientAnimation>
 

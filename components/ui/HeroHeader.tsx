@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 import {FlipWords} from "@/components/ui/FlipWords";
 
 const HeroHeader = () => {
-    const words = ["UI-obsessed", "Test-driven", "Mobile-first", "Mysterious"];
+    const words = ["UI-obsessed", "Test-driven", "Mobile-first"];
 
     return (
         <div>
@@ -17,9 +17,9 @@ const HeroHeader = () => {
                     duration: 0.8,
                     ease: "easeInOut",
                 }}
-                className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-4xl font-bold tracking-tight text-transparent md:text-6xl"
+                className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-7xl font-bold tracking-tight text-transparent lg:text-7xl"
             >
-                <FlipWords words={words}/><br/>full-stack engineer based in NYC.
+                <FlipWords words={words}/><br/>full-stack engineer building cool experiences for cool people. Based in NYC.
             </motion.h1>
         </div>
     );
