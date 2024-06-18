@@ -64,7 +64,6 @@ export const BentoGridItem = ({
                 className
             )}
             style={{
-                // background: "rgb(4,7,29)",
                 background: "rgb(37, 38, 45)",
                 backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
             }}
@@ -98,16 +97,17 @@ export const BentoGridItem = ({
                 <div className={cn(
                     titleClassName, 'relative md:h-full min-h-40 flex flex-col padding-x-2 p-3'
                 )}>
-                    <div className="font-mono text-gray-200 font-bold text-lg lg:text-2xl max-w-96 z-10">
+                    <div className="font-mono text-gray-200 font-bold text-2xl max-w-96 z-10">
                         {title}
                     </div>
-                    <div className='text-gray-400 font-sans text-lg md:text-xs lg:text-xl z-10'>
+                    <div className='text-gray-400 font-sans text-lg lg:text-xl z-10'>
                         {description}
                     </div>
 
                     {/*TECH STACK CAROUSEL*/}
                     {id === 2 && (
-                        <div className='w-full h-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]'>
+                        <div
+                            className='w-full h-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]'>
                             <ul className='flex items-center justify-center md:justify-start[&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll'>
                                 {
                                     toolsList.map((item, index) => (
@@ -128,31 +128,6 @@ export const BentoGridItem = ({
                             </ul>
                         </div>
                     )}
-
-                    {/*{id === 3 && (*/}
-                    {/*    <div className='flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2'>*/}
-                    {/*        <div className='flex flex-col gap-3 lg:gap-8'>*/}
-                    {/*            /!*front end tools*!/*/}
-                    {/*            {leftList.map((item) => (*/}
-                    {/*                <span key={item}*/}
-                    {/*                      className='py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]'>*/}
-                    {/*                {item}*/}
-                    {/*            </span>*/}
-                    {/*            ))}*/}
-                    {/*            <span className='py-4 px-3 rounded-lg text-center bg-[#10132e]'/>*/}
-                    {/*        </div>*/}
-                    {/*        <div className='flex flex-col gap-3 lg:gap-8'>*/}
-                    {/*            <span className='py-4 px-3 rounded-lg text-center bg-[#10132e]'/>*/}
-                    {/*            /!*back end tools*!/*/}
-                    {/*            {rightList.map((item) => (*/}
-                    {/*                <span key={item}*/}
-                    {/*                      className='py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]'>*/}
-                    {/*                {item}*/}
-                    {/*            </span>*/}
-                    {/*            ))}*/}
-                    {/*        </div>*/}
-                    {/*    </div>*/}
-                    {/*)}*/}
 
                     {id === 6 && (
                         <div className='mt-5 relative'>

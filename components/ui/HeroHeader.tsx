@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 import {FlipWords} from "@/components/ui/FlipWords";
 
 const HeroHeader = () => {
-    const words = ["UI-obsessed", "Test-driven", "Mobile-first"];
+    const words = ["UI-obsessed", "Test-driven"];
 
     return (
         <div>
