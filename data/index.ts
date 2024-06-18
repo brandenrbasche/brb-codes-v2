@@ -14,8 +14,8 @@ export const gridItems = [
         className: "lg:col-span-2 md:col-span-3 md:row-span-2",
         imgClassName: "w-full h-full",
         titleClassName: "justify-end",
-        img: "",
-        spareImg: "",
+        img: "/grid.svg",
+        spareImg: "/b4.svg",
     },
     {
         id: 2,
@@ -46,13 +46,13 @@ export const gridItems = [
         className: "lg:col-span-2 md:col-span-3 md:row-span-1",
         imgClassName: "",
         titleClassName: "justify-start",
-        img: "/grid.svg",
-        spareImg: "/b4.svg",
+        img: "",
+        spareImg: "",
     },
 
     {
         id: 5,
-        title: "Where will you find me outside of work?",
+        title: "Outside of work?",
         description: "insert description here",
         className: "md:col-span-3 md:row-span-2",
         imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
